@@ -1,0 +1,56 @@
+<div>
+    <div id="ivr_welcome-view">
+        <div class="welcome_div">
+            <div class="content_wrapper">
+                <div class="welcome_header">
+                    <h1>Welcome to your IVR Services Dashboard!</h1>
+                </div>
+                <div class="content_title">
+                    <div>Account Info</div>
+                    <div>Numbers</div>
+                </div>
+                <div class="content">
+                    <div class="content_half left_div">
+                        <div class="content_block ">
+                            <div class="content_line account">
+                                <div class="icon medium account"></div>Account: <span class="text field account_name">${account_name}</span><span class="right"><div class="edit_icon" data-module="account"></div></span>
+                            </div>
+                        </div>
+                        <div class="content_block">
+                            <span class="title">Account ID:</span> <span class="text field account_id">${account_id}</span>
+                        </div>
+                        <div class="content_block">
+                            <span class="title">Account Realm:</span><span class="text field account_realm">${account_realm}</span>
+                        </div>
+                        <div class="content_block">
+                            Support Contact: <span class="text field support_email">${support_email}</span>&nbsp;&nbsp; |&nbsp;&nbsp;<span class="text field support_number">${support_number}</span>
+                        </div>
+                        <div class="content_block">
+                            <span class="carrier_wrapper">Carrier: <span class="right"><span class="text field carrier">${carrier}</span></span></span>
+                            <div class="clear"/>
+                        </div>
+                        <div class="content_block">
+                            <div class="account_bars">
+                                <div class="content_line">Direct sub-accounts: <div class="bar_wrapper"><div class="progress_bar">&nbsp;</div><div class="number field children_accounts">${children_accounts}</div></div></div>
+                                <div class="content_line">Sub-accounts: <div class="bar_wrapper"><div class="progress_bar">&nbsp;</div><div class="number field descendants_accounts">${descendants_accounts}</div></div></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="content_half right_div">
+			<div class="content_block hoverable" data-module="campaign">
+                            <div class="content_line">
+                                <div class="icon medium conference"></div>Campaigns<span class="right"><span class="number field campaigns">${campaigns}</span></span>
+                            </div>
+                        </div>
+			<div class="content_block hoverable" data-module="product">
+                            <div class="content_line">
+                                <div class="icon medium conference"></div>Products<span class="right"><span class="number field products">${products}</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear"/>
+            </div>
+        </div>
+    </div>
+</div>

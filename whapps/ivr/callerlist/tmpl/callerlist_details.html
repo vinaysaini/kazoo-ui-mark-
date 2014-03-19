@@ -1,0 +1,18 @@
+<div>
+    <div id="detail_callerlist_content">
+        <div id="tab_callerlists">
+            <div class="row title">
+                <div class="column first">Key</div>
+                <div class="column second">Value</div>
+                <div class="clear"/>
+            </div>
+            {{each(k, v) callerlist_fields}}
+                <div class="row">
+                    <div class="column first">${v.key}</div>
+                    <div class="column second">&nbsp;${v.value}</div>
+                    <div class="clear"/>
+                </div>
+            {{/each}}
+        </div>
+    </div>
+</div>

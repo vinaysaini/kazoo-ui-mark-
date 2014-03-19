@@ -1,0 +1,56 @@
+<div>
+	<div class="row">
+		<div class="whapp-header">
+			{{if data.id}}
+                <h1>Edit Campaign</h1>
+            {{else}}
+                <h1>Create Campaign</h1>
+            {{/if}}
+		</div>
+	</div>
+
+	<div class="row">
+		<form id="campaign-form" action="" method="post" >
+			<div class="pill-content">
+				<div class="active basic_view" id="basic">
+					<h3>Campaign</h3>
+					<div class="clearfix">
+						<label for="">Campaign Name:</label>
+						<div class="input">
+							<input class="span4" id="campaign_name" name="campaign_name" type="text" placeholder="Campaign Name" value="${data.campaign_name}" rel="popover" data-content="Friendly name for this campaign"/>
+						</div>
+					</div>
+					<div class="clearfix">
+						<label for="">Campaign Id:</label>
+						<div class="input">
+							<input class="span4" id="campaign_no" name="campaign_no" type="text" placeholder="Campaign ID" value="${data.campaign_no}" rel="popover" data-content="Enter the ID for this campaign"/>
+						</div>
+					</div>
+					<div class="clearfix">
+						<label for="">Winner No:</label>
+						<div class="input">
+							{{if data.id}}
+							<input class="span4" id="winner_no" name="winner_no" type="text" placeholder="Winner No" value="${data.winner_no}" disabled="true" rel="popover" data-content="Enter the Winner No for this campaign"/>
+							{{else}}
+							<input class="span4" id="winner_no" name="winner_no" type="text" placeholder="Winner No" value="${data.winner_no}" rel="popover" data-content="Enter the Winner No for this campaign"/>
+	        					{{/if}}
+						</div>
+					</div>
+					<div class="clearfix">
+						<label for="">Description:</label>
+						<div class="input">
+							<input class="span4" id="campaign_description" name="campaign_description" type="text" placeholder="Description" value="${data.campaign_description}" rel="popover" data-content="Enter the description of campaign which type is this"/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</form>
+
+		<div class="buttons-right">
+	        {{if data.id}}
+	            <button class="btn danger campaign-delete">Delete</button>
+	        {{/if}}
+            <button class="btn success campaign-save">Save</button>
+		</div>
+	</div>
+</div>

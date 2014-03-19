@@ -1,0 +1,126 @@
+#winnerlist-view {
+    margin: auto;
+    width: 90%;
+}
+
+#winnerlist-view #dropdown_filter {
+    margin-right: 15px;
+    height: 25px;
+    width: 125px;
+}
+
+#winnerlist-view table.display td {
+    padding: 6px 3px;
+}
+
+#winnerlist-view .table-wrapper {
+    margin-top: 30px;
+}
+
+#winnerlist-view .date {
+    width: 65%;
+    float: left;
+    margin-bottom: 18px;
+}
+
+#winnerlist-view .date input{
+    font-size: 11px;
+    padding: 4px 2px;
+    border: solid 1px #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#winnerlist-view .date input:focus {
+    background: #FFF;
+    border: solid 1px #09f;
+    color: #000;
+}
+
+#winnerlist-view .date a {
+    vertical-align: middle;
+}
+
+#winnerlist-view .date input[type="text"] {
+    height: 12px;
+    width: 100px;
+}
+
+#winnerlist-view .date label.call_duration {
+    float: right;
+    text-align: right;
+    width: 300px;
+    color: #05addc;
+    overflow: hidden;
+}
+
+#winnerlist-view .dataTables_filter {
+    width: 30%;
+}
+
+#winnerlist-view #winnerlist-grid a {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+#winnerlist-view #winnerlist-grid a:hover {
+    color: #ffffff;
+}
+
+#detail_winnerlist_content #tab_winnerlists  {
+    border: 2px solid #666666;
+    border-radius: 15px 15px 15px 15px;
+    color: #666666;
+    margin: 20px;
+    width: 780px;
+}
+
+#detail_winnerlist_content #tab_winnerlists .column:not(.first) {
+    border-left: 1px solid #A6A6A6;
+}
+
+#detail_winnerlist_content #tab_winnerlists .column {
+    float: left;
+    text-align: center;
+}
+
+#detail_winnerlist_content #tab_winnerlists .column.first {
+    width: 200px;
+    overflow: hidden;
+    text-align:center;
+}
+
+#detail_winnerlist_content #tab_winnerlists .column.second {
+    width: 570px;
+}
+
+#detail_winnerlist_content #tab_winnerlists .row {
+    margin-left: 0px;
+}
+
+#detail_winnerlist_content #tab_winnerlists .row.title {
+    background-color: #dddddd !important;
+    border-bottom: 2px solid #666666 !important;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+}
+
+#detail_winnerlist_content #tab_winnerlists .row:not(:last-child) {
+    border-bottom: 1px solid #A6A6A6;
+}
+
+#detail_winnerlist_content #tab_winnerlists .row:last-child {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#detail_winnerlist_content #tab_winnerlists .row:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#detail_winnerlist_content #tab_winnerlists .row:nth-child(even) {
+    background-color: #dddddd;
+}

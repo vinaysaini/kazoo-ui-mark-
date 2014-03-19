@@ -1,0 +1,60 @@
+.switch_account_popup .main_content {
+    width: 450px;
+}
+
+.switch_account_popup .main_content .pill-content .clearfix {
+    display: block;
+}
+
+#accounts_manager-form .player_file .uneditable-input {
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+#accounts_manager-form .player_file .logo_div {
+    margin-top: 10px;
+    width: 190px;
+    height: 72px;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 1px solid #444;
+}
+
+#accounts_manager-form .refresh_text {
+    margin-left: 150px;
+}
+
+#accounts_manager-form span.mini {
+    width: 50px;
+}
+
+#accounts_manager-form .check-value {
+    width: 30px;
+    margin: 0 10px;
+}
+
+#accounts_manager-form #amount_balance {
+    width: 60px;
+}
+
+#accounts_manager-form span.highlighted {
+    font-weight: bold;
+    color: #05addc;
+}
+
+#accounts_manager-form .text-inline {
+    color: #05ADDC;
+    font-weight: bold;
+    text-align: left;
+}
+
+#accounts_manager-form #textCheckbox {
+    text-align: right;
+}
+
+.notificationsTitle{
+
+    margin-left: 35px;
+    font-weight: bold;
+}

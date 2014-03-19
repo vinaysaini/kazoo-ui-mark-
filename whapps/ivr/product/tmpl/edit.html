@@ -1,0 +1,130 @@
+<div>
+	<div class="row">
+		<div class="whapp-header">
+	    {{if data.id}}
+                <h1>Edit Advertiser</h1>
+            {{else}}
+                <h1>Create Advertiser</h1>
+            {{/if}}
+		</div>
+	</div>
+	<div class="row">
+		<form id="product-form" action="" method="post" >
+			<div class="pill-content">
+				<div class="active basic_view" id="basic">
+					<div class="clearfix">
+						<label for="">Advertiser Name:</label>
+						<div class="input">
+							<input class="span4" id="product_name" name="product_name" type="text" placeholder="Product Name" value="${data.product_name}" rel="popover" data-content="Friendly name for this product"/>
+						</div>
+					</div>
+					<div class="clearfix">
+						<label for="">Product Id:</label>
+						<div class="input">
+							<input class="span4" id="product_id" name="product_id" type="text" placeholder="Product Id" value="${data.product_id}" rel="popover" data-content="Friendly name for this product"/>
+						</div>
+					</div>
+					<div class="clearfix">
+						<label for="">Maximum Call:</label>
+						<div class="input">
+							{{if data.id}}
+							<input class="span4" id="max_call" name="max_call" type="text" placeholder="Maximum Call" value="${data.max_call}" disabled="true" rel="popover" data-content="Enter the Maxixmum call for this advertiser"/>
+							{{else}}
+							<input class="span4" id="max_call" name="max_call" type="text" placeholder="Maximum Call" value="${data.max_call}" rel="popover" data-content="Enter the Maxixmum call for this advertiser"/>
+	        					{{/if}}
+							
+						</div>
+					</div>
+
+					{{if field_data.hide_media}}
+		                        {{else}}
+		                        <div class="clearfix">
+                			        <label for="advertiser_media_id">Advertiser Media</label>
+		                                <div class="input">
+                    			           <span rel="popover" data-content="Select the advertiser media for this product">
+                    		                	<select name="advertiser_media_id" id="advertiser_media_id" class="medium">
+                                    		    		{{each field_data.advertiser_media_id}}
+                                        	    		{{if data.advertiser_media_id == id}}
+                                            	    		<option value="${id}" id="${id}" selected="selected">${name}</option>
+                                        	    		{{else}}
+                                            	    		<option value="${id}" id="${id}">${name}</option>
+                                        	    		{{/if}}
+                                    		    		{{/each}}
+                                    			</select>
+                                		   </span>
+                            			</div>
+                        		</div>
+                    			{{/if}}
+
+					{{if field_data.hide_media}}
+		                        {{else}}
+		                        <div class="clearfix">
+                			        <label for="winner_media_id">Winner Media</label>
+		                                <div class="input">
+                    			           <span rel="popover" data-content="Select the winner media for this product">
+                    		                	<select name="winner_media_id" id="winner_media_id" class="medium">
+                                    		    		{{each field_data.advertiser_media_id}}
+                                        	    		{{if data.winner_media_id == id}}
+                                            	    		<option value="${id}" id="${id}" selected="selected">${name}</option>
+                                        	    		{{else}}
+                                            	    		<option value="${id}" id="${id}">${name}</option>
+                                        	    		{{/if}}
+                                    		    		{{/each}}
+                                    			</select>
+                                		   </span>
+                            			</div>
+                        		</div>
+                    			{{/if}}
+
+					{{if field_data.hide_callflow}}
+		                        {{else}}
+		                        <div class="clearfix">
+                			        <label for="transfer_callflow_id">Transfer Callflow</label>
+		                                <div class="input">
+                    			           <span rel="popover" data-content="Select the transfer callflow for this product">
+                    		                	<select name="transfer_callflow_id" id="transfer_callflow_id" class="medium">
+                                    		    		{{each field_data.callflows}}
+                                        	    		{{if data.transfer_callflow_id == id}}
+                                            	    		<option value="${id}" id="${id}" selected="selected">${numbers}</option>
+                                        	    		{{else}}
+                                            	    		<option value="${id}" id="${id}">${numbers}</option>
+                                        	    		{{/if}}
+                                    		    		{{/each}}
+                                    			</select>
+                                		   </span>
+                            			</div>
+                        		</div>
+                    			{{/if}}
+
+					{{if field_data.hide_callflow}}
+                                        {{else}}
+                                        <div class="clearfix">
+                                                <label for="continue_callflow_id">Continue Callflow</label>
+                                                <div class="input">
+                                                   <span rel="popover" data-content="Select the continue callflow for this campaign">
+                                                        <select name="continue_callflow_id" id="continue_callflow_id" class="medium">
+                                                                {{each field_data.callflows}}
+                                                                {{if data.continue_callflow_id == id}}
+                                                                <option value="${id}" id="${id}" selected="selected">${numbers}</option>
+                                                                {{else}}
+                                                                <option value="${id}" id="${id}">${numbers}</option>
+                                                                {{/if}}
+                                                                {{/each}}
+                                                        </select>
+                                                   </span>
+                                                </div>
+                                        </div>
+                                        {{/if}}
+
+				</div>
+                         </div>
+
+		</form>
+		<div class="buttons-right">
+	        	{{if data.id}}
+	            	<button class="btn danger product-delete">Delete</button>
+	        	{{/if}}
+            		<button class="btn success product-save">Save</button>
+		</div>
+	</div>
+</div>

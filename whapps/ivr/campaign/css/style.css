@@ -1,0 +1,165 @@
+#campaign-form input[disabled=disabled] {
+    background: #ccc;
+}
+
+#campaign-form #equipment {
+    text-align: center;
+}
+
+#campaign-form #equipment .add_product {
+    margin-top: 15px;
+    display: inline-block;
+}
+
+#campaign-form #equipment .add_product:hover a {
+    color: #333333;
+}
+
+#campaign-form #equipment .add_product:hover .add_product_icon {
+    background-position: 0 -24px;
+    cursor: pointer;
+}
+
+#campaign-form #equipment .add_product .add_product_icon {
+    background-image: url("../../../core/layout/images/plus_btn.png");
+    background-position: 0 0;
+    display: inline-block;
+    height: 25px;
+    margin-top: -4px;
+    vertical-align: middle;
+    width: 25px;
+}
+
+#campaign-form #equipment #tab_products  {
+    border: 2px solid #666666;
+    border-radius: 15px 15px 15px 15px;
+    color: #666666;
+    margin: 20px auto auto;
+    width: 560px;
+}
+
+#campaign-form #equipment #tab_products .action_product {
+    color: #666666;
+    cursor: pointer;
+    text-decoration: underline;
+    line-height: 30px;
+}
+
+#campaign-form #equipment #tab_products .action_product:not(:first-child) {
+    margin-left: 10px;
+}
+#campaign-form #equipment #tab_products .action_product:hover {
+    color: #05addc;
+}
+
+#campaign-form #equipment #tab_products .column:not(.fifth) {
+    border-right: 1px solid #A6A6A6;
+}
+
+#campaign-form #equipment #tab_products .column {
+    float: left;
+    text-align: center;
+    height: 30px;
+    line-height: 30px;
+}
+
+#campaign-form #equipment #tab_products .column.first {
+    width: 190px;
+    overflow: hidden;
+    text-align:center;
+}
+
+#campaign-form #equipment #tab_products .column.second {
+    width: 99px;
+}
+
+#campaign-form #equipment #tab_products .column.third {
+    min-width: 49px;
+}
+
+#campaign-form #equipment #tab_products .rows .column.third {
+    background-image: url('../../product/images/red.png');
+    background-repeat: no-repeat;
+    background-position: 16px center;
+}
+
+#campaign-form #equipment #tab_products .rows .column.third.registered, #campaign-form #equipment #tab_products .rows .column.third.cellphone {
+    background-image: url('../../product/images/green.png');
+}
+
+#campaign-form #equipment #tab_products .rows .column.third.disabled {
+    background-image: url('../../product/images/gray.png') !important;
+}
+
+#campaign-form #equipment #tab_products .column.fourth {
+    width: 59px;
+}
+
+#campaign-form #equipment #tab_products .column.fourth .enabled_checkbox {
+    margin-top: 8px;
+}
+
+#campaign-form #equipment #tab_products .column.fifth {
+    width: 159px;
+}
+
+#campaign-form #equipment #tab_products .column.merged {
+    width: 560px;
+}
+
+#campaign-form #equipment #tab_products .row {
+    height: 30px;
+    margin-left: 0px;
+}
+
+#campaign-form #equipment #tab_products .row.title {
+    background-color: #dddddd !important;
+    border-bottom: 2px solid #666666 !important;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+}
+
+#campaign-form #equipment #tab_products .row:not(:last-child) {
+    border-bottom: 1px solid #A6A6A6;
+}
+
+#campaign-form #equipment #tab_products .row:last-child {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#campaign-form #equipment #tab_products .row:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#campaign-form #equipment #tab_products .row:nth-child(even) {
+    background-color: #dddddd;
+}
+
+#campaign-form #campaignname_label {
+    color: #05addc;
+    text-align: left;
+    font-weight: bold;
+}
+
+/* Hotdesk products */
+#campaign-form #hotdesk_products {
+    /*width: 400px;*/
+    width: 320px;
+}
+
+#campaign-form #hotdesk_products .row .column:nth-child(1) {
+    width: 300px;
+}
+
+#campaign-form #hotdesk_products .row .column:nth-child(2) {
+    width: 80px;
+}
+
+#campaign-form #hotdesk_products .row .column.merged {
+    /* width: 400px; */
+    width: 320px;
+}
+
+#campaign-form #hotdesk_products .row input[type="checkbox"] {
+    margin-top: 10px;
+}

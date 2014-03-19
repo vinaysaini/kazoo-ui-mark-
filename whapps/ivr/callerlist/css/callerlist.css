@@ -1,0 +1,126 @@
+#callerlist-view {
+    margin: auto;
+    width: 90%;
+}
+
+#callerlist-view #dropdown_filter {
+    margin-right: 15px;
+    height: 25px;
+    width: 125px;
+}
+
+#callerlist-view table.display td {
+    padding: 6px 3px;
+}
+
+#callerlist-view .table-wrapper {
+    margin-top: 30px;
+}
+
+#callerlist-view .date {
+    width: 65%;
+    float: left;
+    margin-bottom: 18px;
+}
+
+#callerlist-view .date input{
+    font-size: 11px;
+    padding: 4px 2px;
+    border: solid 1px #999;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
+}
+
+#callerlist-view .date input:focus {
+    background: #FFF;
+    border: solid 1px #09f;
+    color: #000;
+}
+
+#callerlist-view .date a {
+    vertical-align: middle;
+}
+
+#callerlist-view .date input[type="text"] {
+    height: 12px;
+    width: 100px;
+}
+
+#callerlist-view .date label.call_duration {
+    float: right;
+    text-align: right;
+    width: 300px;
+    color: #05addc;
+    overflow: hidden;
+}
+
+#callerlist-view .dataTables_filter {
+    width: 30%;
+}
+
+#callerlist-view #callerlist-grid a {
+    color: #cccccc;
+    text-decoration: underline;
+}
+
+#callerlist-view #callerlist-grid a:hover {
+    color: #ffffff;
+}
+
+#detail_callerlist_content #tab_callerlists  {
+    border: 2px solid #666666;
+    border-radius: 15px 15px 15px 15px;
+    color: #666666;
+    margin: 20px;
+    width: 780px;
+}
+
+#detail_callerlist_content #tab_callerlists .column:not(.first) {
+    border-left: 1px solid #A6A6A6;
+}
+
+#detail_callerlist_content #tab_callerlists .column {
+    float: left;
+    text-align: center;
+}
+
+#detail_callerlist_content #tab_callerlists .column.first {
+    width: 200px;
+    overflow: hidden;
+    text-align:center;
+}
+
+#detail_callerlist_content #tab_callerlists .column.second {
+    width: 570px;
+}
+
+#detail_callerlist_content #tab_callerlists .row {
+    margin-left: 0px;
+}
+
+#detail_callerlist_content #tab_callerlists .row.title {
+    background-color: #dddddd !important;
+    border-bottom: 2px solid #666666 !important;
+    border-radius: 15px 15px 0px 0px;
+    font-weight: bold;
+}
+
+#detail_callerlist_content #tab_callerlists .row:not(:last-child) {
+    border-bottom: 1px solid #A6A6A6;
+}
+
+#detail_callerlist_content #tab_callerlists .row:last-child {
+    border-radius: 0px 0px 15px 15px;
+}
+
+#detail_callerlist_content #tab_callerlists .row:nth-child(odd) {
+    background-color: #eeeeee;
+}
+
+#detail_callerlist_content #tab_callerlists .row:nth-child(even) {
+    background-color: #dddddd;
+}

@@ -1,0 +1,20 @@
+<div>
+    <div class="dialog_popup">
+        <h1>Pause Agent</h1>
+        <form name="form" method="post" action="#">
+            <div class="form_content">
+                <div class="popup_field">
+                    <label for="timeout">Pause Duration (s): </label>
+                    <input type="text" id="timeout" value="${data_agent.timeout}"/>
+                </div>
+                <div class="popup_field">
+                    <label for="presence_id">Presence ID: </label>
+                    <input type="text" id="presence_id" placeholder="Optional" value="${data_agent.presence_id}"/>
+                </div>
+            </div>
+        </form>
+        <div class="buttons-center">
+            <button id="add" class="btn primary">OK</button>
+        </div>
+    </div>
+</div>
